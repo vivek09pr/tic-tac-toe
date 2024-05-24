@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+        #container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #tic {
+            display: flex;
+            flex-wrap: wrap;
+            height: 70%;
+            width: 28%;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            border-radius: 39px;
+            margin: 4px;
+            cursor: pointer;
+        }
+
+        @media  (min-width: 374px) and (max-width:450px ){
+            #tic {
+                width: 91%;
+            }
+          
+              
+        }
+        @media  (min-width: 451px) and (max-width:474px ){
+            #tic {
+                width: 91%;
+            }
+          
+              
+        }
+        @media  (min-width: 475px) and (max-width:496px ){
+            #tic {
+                width: 87%;
+            }
+          
+              
+        }
+        
+        
+        @media (min-width: 697px) and (max-width:772px ) {
+            #tic {
+                width: 70%;
+            }
+            
+        }
+        
+        @media (min-width: 500px) and (max-width:696px ) {
+            #tic {
+                width: 62%;
+            }
+            
+        }
+        .box{
+            font-size: 87px;
+        }
+        .msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+        .hide{
+          display: none;
+        }
+        #r{
+         display: flex;
+         justify-content: center;
+         position: relative;
+         bottom: 80px;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Tic Tac Toe</h1>
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="new-btn">New Game</button>
+      </div>
+    <div id="container">
+        <div id="tic">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+    </div>
+    <div id="r">
+        <button id="re" style="font-size: xx-large; border-radius: 7px;" onclick=" resetGame()">Reset</button>
+    </div>
+
+    <script src="tic.js"></script>
+</body>
+</html>
